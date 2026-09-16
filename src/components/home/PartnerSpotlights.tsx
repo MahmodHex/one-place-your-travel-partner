@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MONETIZED_BRANDS } from '../../constants/partners';
-import { ExternalLink, Sparkles, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import { Sparkles, ShieldCheck, ArrowUpRight } from 'lucide-react';
 
 export const PartnerSpotlights: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('all');
@@ -20,7 +20,7 @@ export const PartnerSpotlights: React.FC = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-6 sm:px-10 py-14">
-      {/* হেডার */}
+      {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
         <div>
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-black bg-blue-50 text-blue-600 border border-blue-200 mb-2">
@@ -35,7 +35,7 @@ export const PartnerSpotlights: React.FC = () => {
           </p>
         </div>
 
-        {/* ফিল্টার ট্যাব */}
+        {/* Filter Tabs */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-2">
           {tabs.map((tab) => (
             <button
@@ -53,7 +53,7 @@ export const PartnerSpotlights: React.FC = () => {
         </div>
       </div>
 
-      {/* পার্টনার ডিল কার্ডস */}
+      {/* Partner Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {filteredBrands.map((brand) => (
           <a
