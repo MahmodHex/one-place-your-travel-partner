@@ -18,7 +18,7 @@ export const MONETIZED_BRANDS: PartnerBrand[] = [
     logoText: '📱 YESIM',
     tagline: 'Global Unlimited 5G eSIM',
     commissionBadge: '18% High Yield',
-    url: 'https://yesim.app',
+    url: 'https://yesim.tpm.lv/iV7xxxWO',
     description: 'Instant eSIM activation with unlimited high-speed data across 150+ countries. 90-day cookie warranty.',
   },
   {
