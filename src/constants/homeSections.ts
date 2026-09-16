@@ -91,3 +91,61 @@ export const RECENTLY_VIEWED: RecentItem[] = [
     bgImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=600&auto=format&fit=crop',
   },
 ];
+
+export interface DestinationItem {
+  id: string;
+  name: string;
+  country: string;
+  activities: string;
+  fareFrom: string;
+  url: string;
+  image: string;
+}
+
+export const POPULAR_DESTINATIONS: DestinationItem[] = [
+  {
+    id: 'dubai',
+    name: 'Dubai',
+    country: 'United Arab Emirates',
+    activities: '620+ activities',
+    fareFrom: '$210',
+    url: 'https://www.aviasales.com/search?destination=DXB',
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=600&auto=format&fit=crop',
+  },
+  {
+    id: 'bangkok',
+    name: 'Bangkok',
+    country: 'Thailand',
+    activities: '480+ activities',
+    fareFrom: '$140',
+    url: 'https://www.aviasales.com/search?destination=BKK',
+    image: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=600&auto=format&fit=crop',
+  },
+  {
+    id: 'singapore',
+    name: 'Singapore',
+    country: 'Singapore',
+    activities: '390+ activities',
+    fareFrom: '$230',
+    url: 'https://www.aviasales.com/search?destination=SIN',
+    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=600&auto=format&fit=crop',
+  },
+  {
+    id: 'kualalumpur',
+    name: 'Kuala Lumpur',
+    country: 'Malaysia',
+    activities: '310+ activities',
+    fareFrom: '$165',
+    url: 'https://www.aviasales.com/search?destination=KUL',
+    image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=600&auto=format&fit=crop',
+  },
+  {
+    id: 'istanbul',
+    name: 'Istanbul',
+    country: 'Turkey',
+    activities: '540+ activities',
+    fareFrom: '$280',
+    url: 'https://www.aviasales.com/search?destination=IST',
+    image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=600&auto=format&fit=crop',
+  },
+];
