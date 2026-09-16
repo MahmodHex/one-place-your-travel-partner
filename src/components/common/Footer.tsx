@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Plane,
   ShieldCheck,
   Compass,
   Sparkles,
@@ -13,10 +12,10 @@ import {
 export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-white border-t border-slate-200 mt-20">
-      {/* ১. Klook-স্টাইল "Why Choose One Place" ট্রাস্ট সেকশন */}
+      {/* ১. "Why Choose Your Travel Partner" ট্রাস্ট সেকশন */}
       <section className="max-w-7xl mx-auto px-6 sm:px-10 py-16">
         <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-10">
-          Why Choose One Place
+          Why Choose Your Travel Partner
         </h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -29,7 +28,7 @@ export const Footer: React.FC = () => {
               Discover the possibilities
             </h4>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Explore millions of direct flight combinations, 5G eSIM connectivity, and curated tours worldwide.
+              Explore millions of direct flight combinations, 5G eSIM connectivity, and curated tours across 26+ global partners.
             </p>
           </div>
 
@@ -42,7 +41,7 @@ export const Footer: React.FC = () => {
               Enjoy zero markup
             </h4>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Book at official wholesale partner rates. Zero agent commissions, zero hidden booking charges.
+              Book at official wholesale partner rates. Zero hidden booking fees and 100% transparent pricing.
             </p>
           </div>
 
@@ -55,7 +54,7 @@ export const Footer: React.FC = () => {
               Direct official passes
             </h4>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Instant mobile vouchers, skip-the-line QR codes, and digital eSIM profiles delivered immediately.
+              Instant mobile vouchers, skip-the-line QR tickets, and digital eSIM profiles delivered immediately to your device.
             </p>
           </div>
 
@@ -68,7 +67,7 @@ export const Footer: React.FC = () => {
               Travel you can trust
             </h4>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Transactions processed directly via verified partners (Kiwi, Airalo, Klook, Tiqets) with 256-bit SSL.
+              Transactions processed directly via verified global networks (Aviasales, Airalo, Klook, Tiqets) with 256-bit encryption.
             </p>
           </div>
         </div>
@@ -77,50 +76,57 @@ export const Footer: React.FC = () => {
       {/* ২. মূল ফুটার মেনু ও পার্টনার লিঙ্কস */}
       <div className="border-t border-slate-100 bg-slate-50/70 py-12">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* ব্র্যান্ড ইনফো */}
+          {/* ব্র্যান্ড ইনফো এবং আসল লোগো */}
           <div className="space-y-3.5 md:col-span-1">
             <Link to="/" className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-sm">
-                <Plane className="h-5 w-5" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Your Travel Partner"
+                className="h-11 w-auto object-contain"
+              />
               <div>
                 <span className="text-lg font-black tracking-tight text-slate-900 block leading-tight">
-                  One Place
+                  Your Travel Partner
                 </span>
                 <span className="text-[10px] font-extrabold text-blue-600 tracking-wider uppercase">
-                  Your Travel Partner
+                  All in One Gateway
                 </span>
               </div>
             </Link>
             <p className="text-xs text-slate-500 leading-relaxed">
-              An intelligent meta-travel gateway aggregating the world's most trusted travel brands into one seamless experience.
+              An intelligent meta-travel gateway aggregating 26+ verified global travel brands into one seamless experience.
             </p>
           </div>
 
-          {/* পার্টনার চ্যানেল */}
+          {/* পার্টনার চ্যানেল (ক্লিন সরাসরি লিংক যা Drive স্ক্রিপ্টে স্বয়ংক্রিয় ট্র্যাক হবে) */}
           <div>
             <h5 className="font-extrabold text-slate-900 text-xs tracking-wider uppercase mb-4">
               Official Portals
             </h5>
             <ul className="space-y-2.5 text-xs text-slate-600">
               <li>
-                <a href="https://kiwi.tp.st/" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
-                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Kiwi.com Flight Hub
+                <a href="https://www.aviasales.com" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Aviasales Flight Search
                 </a>
               </li>
               <li>
-                <a href="https://airalo.tp.st/" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
+                <a href="https://www.airalo.com" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
                   <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Airalo 5G Travel eSIM
                 </a>
               </li>
               <li>
-                <a href="https://klook.tp.st/" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
-                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Klook Attractions & Tours
+                <a href="https://yesim.app" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Yesim Unlimited Data
                 </a>
               </li>
               <li>
-                <a href="https://tiqets.tp.st/" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
-                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Tiqets Museums & Landmarks
+                <a href="https://www.klook.com" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Klook Tours & Attractions
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiqets.com" target="_blank" rel="noreferrer" className="hover:text-blue-600 flex items-center gap-1.5 transition">
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" /> Tiqets Museums & Passes
                 </a>
               </li>
             </ul>
@@ -177,13 +183,13 @@ export const Footer: React.FC = () => {
       {/* ৩. কপিরাইট স্ট্রিপ */}
       <div className="border-t border-slate-200 bg-white py-6 px-6 sm:px-10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-400 text-xs font-medium">
-          <p>© {new Date().getFullYear()}  Your Travel Partner. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Your Travel Partner. All rights reserved.</p>
           <div className="flex items-center gap-4 text-[11px] text-slate-500">
             <span className="hover:text-slate-900 cursor-pointer transition">Privacy Policy</span>
             <span>•</span>
             <span className="hover:text-slate-900 cursor-pointer transition">Terms of Use</span>
             <span>•</span>
-            <span className="hover:text-slate-900 cursor-pointer transition">Partner Agreement</span>
+            <span className="hover:text-slate-900 cursor-pointer transition">Partner Network Agreement</span>
           </div>
         </div>
       </div>

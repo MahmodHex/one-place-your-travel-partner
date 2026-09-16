@@ -1,5 +1,5 @@
 import React from 'react';
-import { SPECIAL_OFFERS } from '../../constants/homeSections';
+import { SPECIAL_OFFERS, type SpecialOffer } from '../../constants/homeSections';
 import { ArrowUpRight } from 'lucide-react';
 
 export const OffersForYou: React.FC = () => {
@@ -15,7 +15,7 @@ export const OffersForYou: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {SPECIAL_OFFERS.map((offer) => (
+        {SPECIAL_OFFERS.map((offer: SpecialOffer) => (
           <a
             key={offer.id}
             href={offer.url}

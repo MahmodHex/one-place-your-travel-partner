@@ -1,5 +1,5 @@
 import React from 'react';
-import { RECENTLY_VIEWED } from '../../constants/homeSections';
+import { RECENTLY_VIEWED, type RecentItem } from '../../constants/homeSections';
 import { Star, ArrowUpRight } from 'lucide-react';
 
 export const RecentlyViewed: React.FC = () => {
@@ -11,7 +11,7 @@ export const RecentlyViewed: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        {RECENTLY_VIEWED.map((item) => (
+        {RECENTLY_VIEWED.map((item: RecentItem) => (
           <a
             key={item.id}
             href={item.url}
@@ -22,7 +22,7 @@ export const RecentlyViewed: React.FC = () => {
             <div>
               <div className="relative h-40 overflow-hidden bg-slate-900">
                 <img
-                  src={item.image}
+                  src={item.bgImage}
                   alt={item.title}
                   className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
                 />

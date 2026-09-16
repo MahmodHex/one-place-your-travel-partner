@@ -56,20 +56,17 @@ export const Navbar: React.FC = () => {
 
         {/* Main Navigation Bar */}
         <div className="max-w-7xl mx-auto px-6 sm:px-10 py-3.5 sm:py-4 flex items-center justify-between gap-6">
-          {/* Brand Logo */}
-          <Link to="/" className="flex items-center gap-3 shrink-0 group">
-            <div className="h-10 w-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-500/25 group-hover:scale-105 transition">
-              <Plane className="h-5 w-5" />
-            </div>
-            <div>
-              <span className="text-xl font-black tracking-tight text-slate-900 block leading-tight">
-                One Place
-              </span>
-              <span className="text-[10px] font-extrabold text-blue-600 tracking-wider uppercase block">
-                Your Travel Partner
-              </span>
-            </div>
-          </Link>
+         {/* Brand Logo */}
+<       Link to="/" className="flex items-center gap-3 shrink-0 group">
+           <img 
+    src="/logo.png" 
+    alt="Your Travel Partner" 
+    className="h-11 sm:h-12 w-auto object-contain transition group-hover:scale-105" 
+  />
+  <span className="text-xl font-black tracking-tight text-slate-900 leading-tight">
+    Your Travel Partner
+  </span>
+            </Link>
 
           {/* Desktop Links */}
           <nav className="hidden md:flex items-center gap-2 lg:gap-3">
