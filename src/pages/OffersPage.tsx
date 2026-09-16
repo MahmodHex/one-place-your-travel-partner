@@ -7,7 +7,6 @@ import {
   ExternalLink,
   Sparkles,
   Clock,
-  ShieldCheck,
   Compass,
   Plane,
   Wifi,
@@ -40,7 +39,7 @@ export const OffersPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50/60 pb-24">
-      {/* ১. টপ ব্যানার */}
+      {/* Top Banner */}
       <section className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white py-14 px-6 sm:px-10 border-b border-slate-800">
         <div className="max-w-7xl mx-auto space-y-3.5">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-orange-500/20 text-orange-300 border border-orange-400/30">
@@ -55,7 +54,7 @@ export const OffersPage: React.FC = () => {
         </div>
       </section>
 
-      {/* ২. ক্যাটাগরি ফিল্টার ডক */}
+      {/* Category Filter Dock */}
       <div className="max-w-7xl mx-auto px-6 sm:px-10 -mt-6">
         <div className="bg-white rounded-2xl p-3 sm:p-4 shadow-lg border border-slate-200 flex items-center gap-2 overflow-x-auto">
           {categories.map((cat) => {
@@ -79,7 +78,7 @@ export const OffersPage: React.FC = () => {
         </div>
       </div>
 
-      {/* ৩. কুপন গ্রিড */}
+      {/* Vouchers Grid */}
       <main className="max-w-7xl mx-auto px-6 sm:px-10 mt-10">
         <div className="flex items-center justify-between mb-6">
           <p className="text-xs font-bold text-slate-500">
@@ -94,7 +93,7 @@ export const OffersPage: React.FC = () => {
               className="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                {/* কার্ড হেডার রিয়েল ইমেজ */}
+                {/* Image Header */}
                 <div className="relative h-44 w-full overflow-hidden bg-slate-900">
                   <img
                     src={promo.bgImage}
@@ -103,7 +102,7 @@ export const OffersPage: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
 
-                  {/* ব্যাজ */}
+                  {/* Badges */}
                   <div className="absolute top-3 left-3 bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">
                     {promo.badge}
                   </div>
@@ -112,7 +111,7 @@ export const OffersPage: React.FC = () => {
                     {promo.provider}
                   </div>
 
-                  {/* অফার ডিসকাউন্ট */}
+                  {/* Discount */}
                   <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between">
                     <div>
                       <span className="text-2xl font-black text-amber-300 block drop-shadow">
@@ -126,7 +125,7 @@ export const OffersPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* কার্ড বডি */}
+                {/* Card Body */}
                 <div className="p-5 space-y-2">
                   <h3 className="font-extrabold text-slate-900 text-base leading-snug group-hover:text-blue-600 transition">
                     {promo.title}
@@ -137,9 +136,8 @@ export const OffersPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* কুপন কপি ও ডিরেক্ট বুকিং বার */}
+              {/* Code Box & Direct Redeem */}
               <div className="p-5 pt-3 border-t border-dashed border-slate-200 bg-slate-50/60 space-y-3">
-                {/* কোড বক্স */}
                 <div className="flex items-center justify-between bg-white border border-blue-200 rounded-xl p-2 px-3 shadow-xs">
                   <div className="flex items-center gap-2">
                     <Tag className="h-4 w-4 text-blue-600" />
@@ -166,7 +164,6 @@ export const OffersPage: React.FC = () => {
                   </button>
                 </div>
 
-                {/* ডিরেক্ট পার্টনার বাটন */}
                 <a
                   href={promo.partnerUrl}
                   target="_blank"
@@ -184,4 +181,3 @@ export const OffersPage: React.FC = () => {
     </div>
   );
 };
-
