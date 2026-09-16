@@ -1,26 +1,26 @@
 import React from 'react';
 import { HeroSection } from '../components/home/HeroSection';
-import { PartnerSpotlights } from '../components/home/PartnerSpotlights';
 import { CategoryDock } from '../components/home/CategoryDock';
-import { OfferCarousel } from '../components/home/OfferCarousel';
+import { PopularPlaces } from '../components/home/PopularPlaces';
+import { PartnerSpotlights } from '../components/home/PartnerSpotlights';
 import { OffersForYou } from '../components/home/OffersForYou';
 
 export const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50/60 pb-20 space-y-6">
-      {/* 1. Hero Section With Working Direct Search Engine */}
+      {/* 1. Hero Search Section */}
       <HeroSection />
 
-      {/* 2. Quick Category Access Dock */}
+      {/* 2. Quick Category Filter Dock */}
       <CategoryDock />
 
-      {/* 3. Flash Offers & Discount Codes Carousel */}
-      <OfferCarousel />
+      {/* 3. Live Travelpayouts Popular Destinations (Replacing Limited Time Offer) */}
+      <PopularPlaces />
 
-      {/* 4. 26 Direct Partner Gateways (Fully Clickable) */}
+      {/* 4. 26 Direct Partner Gateways */}
       <PartnerSpotlights />
 
-      {/* 5. Recommended Destinations */}
+      {/* 5. Recommended Deals */}
       <OffersForYou />
     </div>
   );
