@@ -177,7 +177,7 @@ export const Footer: React.FC = () => {
       {/* ৩. কপিরাইট স্ট্রিপ */}
       <div className="border-t border-slate-200 bg-white py-6 px-6 sm:px-10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-400 text-xs font-medium">
-          <p>© {new Date().getFullYear()} One Place - Your Travel Partner. All rights reserved.</p>
+          <p>© {new Date().getFullYear()}  Your Travel Partner. All rights reserved.</p>
           <div className="flex items-center gap-4 text-[11px] text-slate-500">
             <span className="hover:text-slate-900 cursor-pointer transition">Privacy Policy</span>
             <span>•</span>

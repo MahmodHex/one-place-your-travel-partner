@@ -28,8 +28,8 @@ export const HeroSection: React.FC = () => {
       {/* Transparent Glass Filter Box */}
       <div className="relative z-10 max-w-2xl mx-auto w-full text-center px-6 py-5 sm:px-8 sm:py-6 rounded-2xl bg-white/70 backdrop-blur-md border border-white/70 shadow-lg space-y-3">
         <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-tight text-slate-900">
-          Your World of Travel, <span className="text-blue-600">All in One Place</span>
-        </h1>
+              Welcome to <span className="text-blue-600">Your Travel Partner</span>
+             </h1>
 
         <p className="max-w-lg mx-auto text-slate-700 text-xs sm:text-sm font-semibold leading-relaxed">
           Compare verified flights, instant 5G eSIMs, airport transfers, and museum tickets with zero extra fees.
