@@ -1,35 +1,27 @@
 import React from 'react';
 import { HeroSection } from '../components/home/HeroSection';
-import { CategoryDock } from '../components/home/CategoryDock';
-import { OffersForYou } from '../components/home/OffersForYou';
-import { RecentlyViewed } from '../components/home/RecentlyViewed';
-import { PopularPlaces } from '../components/home/PopularPlaces';
-import { OfferCarousel } from '../components/home/OfferCarousel';
 import { PartnerSpotlights } from '../components/home/PartnerSpotlights';
+import { CategoryDock } from '../components/home/CategoryDock';
+import { OfferCarousel } from '../components/home/OfferCarousel';
+import { OffersForYou } from '../components/home/OffersForYou';
 
 export const HomePage: React.FC = () => {
   return (
-    <div className="flex flex-col space-y-4 pb-12">
-      {/* ১. হিরো ব্যানার ও সার্চ পিল */}
+    <div className="min-h-screen bg-slate-50/60 pb-20 space-y-6">
+      {/* 1. Hero Section With Working Direct Search Engine */}
       <HeroSection />
 
-      {/* ২. ক্যাটাগরি ডক */}
+      {/* 2. Quick Category Access Dock */}
       <CategoryDock />
 
-      {/* ৩. Offers For You (Klook কুপন ব্যানার গ্রিড) */}
-      <OffersForYou />
-
-      {/* ৪. Recently Viewed (লাইভ প্যাকেজ কার্ডস) */}
-      <RecentlyViewed />
-
-      {/* ৫. Where to Next? (জনপ্রিয় শহরের ছবি সহ কার্ডস) */}
-      <PopularPlaces />
-
-      {/* ৬. লাইভ পার্টনার ফ্ল্যাশ অফার স্লাইডার */}
+      {/* 3. Flash Offers & Discount Codes Carousel */}
       <OfferCarousel />
 
-      {/* ৭. ভেরিফাইড পার্টনার স্পটলাইটস */}
+      {/* 4. 26 Direct Partner Gateways (Fully Clickable) */}
       <PartnerSpotlights />
+
+      {/* 5. Recommended Destinations */}
+      <OffersForYou />
     </div>
   );
 };
